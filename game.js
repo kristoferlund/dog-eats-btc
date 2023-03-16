@@ -1,8 +1,14 @@
+// Get a reference to the canvas and its context
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
+// Initialize game variables
 let score = 0;
+let coinsCollected = 0;
+let levelCompleted = false;
+let gameStarted = false;
 
+// Constants for the game physics
 const GRAVITY = 0.3;
 const JUMP_STRENGTH = 12;
 const MAX_FALL_DISTANCE = canvas.height / 2;
@@ -10,18 +16,19 @@ const INVINCIBILITY_DURATION = 5000;
 const GROUND_FRICTION = 0.9;
 const AIR_FRICTION = 0.85;
 
-const KEY_LEFT = "ArrowLeft";
-const KEY_RIGHT = "ArrowRight";
-const KEY_JUMP = " ";
-
+// Constants for the level dimensions and coin generation
 const LEVEL_WIDTH = canvas.width * 4;
-let coinsCollected = 0;
-let levelCompleted = false;
-
 const numCoinGroups = 5;
 const coinsPerGroup = 4;
 const coinSize = 25;
 
+// Constants for key inputs
+const KEY_LEFT = "ArrowLeft";
+const KEY_RIGHT = "ArrowRight";
+const KEY_JUMP = " ";
+const keysPressed = new Set();
+
+// Preload images
 const ethereumLogo = new Image();
 ethereumLogo.src = "./dog.png";
 
@@ -33,10 +40,6 @@ backgroundImg.src = "./background.png";
 
 const introBackgroundImage = new Image();
 introBackgroundImage.src = "./intro.png";
-
-const keysPressed = new Set();
-
-let gameStarted = false;
 
 document.addEventListener("keydown", (e) => {
   keysPressed.add(e.key);
