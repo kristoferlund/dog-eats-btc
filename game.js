@@ -429,6 +429,3 @@ function gameLoop() {
 }
 
 gameLoop();
-
-Adding Gameplay Elements
-The Machine generated code for various gameplay elements, such as character movement, collision detection, a
