@@ -6,6 +6,13 @@
 
 This game was created in a unique collaboration between Kristofer The Promptgiver and The Machine (OpenAI). This README serves as an overview of the project and a tutorial for newbie coders looking to learn how to create games using OpenAI.
 
+Try the game here: https://dog-eth-btc.on.fleek.co
+
+This is **not** a complete game. It is a work in progress and a demo, and I will continue to add features and polish the game over time. If you have any feedback or suggestions, please let me know!
+
+- https://twitter.com/kristoferlund
+- Discord: Kristofer#1475
+
 ## Table of Contents
 
 - [Introduction](#introduction)
