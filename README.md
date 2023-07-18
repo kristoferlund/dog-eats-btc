@@ -1,6 +1,6 @@
-![DOG](intro.png)
+![DOGE](intro.png)
 
-# DOG ETH BTC
+# DOGE EATS BTC
 
 ## The Game
 
@@ -25,7 +25,7 @@ This is **not** a complete game. It is a work in progress and a demo, and I will
 
 ## Introduction
 
-This side-scrolling game features a dog eating Bitcoin (BTC) coins. When all the coins are eaten, the level is complete. The project combines OpenAI-generated code with visual assets created by Midjourney to form a complete and engaging game experience.
+This side-scrolling game features a doge eating Bitcoin (BTC) coins. When all the coins are eaten, the level is complete. The project combines OpenAI-generated code with visual assets created by Midjourney to form a complete and engaging game experience.
 
 ## Creating the Game
 

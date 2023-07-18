@@ -9,8 +9,8 @@ let levelCompleted = false;
 let gameStarted = false;
 
 // Constants for the game physics
-const GRAVITY = 0.3;
-const JUMP_STRENGTH = 12;
+const GRAVITY = 0.7;
+const JUMP_STRENGTH = 20;
 const MAX_FALL_DISTANCE = canvas.height / 2;
 const INVINCIBILITY_DURATION = 5000;
 const GROUND_FRICTION = 0.9;
@@ -335,7 +335,7 @@ function drawGround() {
 function drawLevelCompleteMessage() {
   if (!levelCompleted) return;
   const text = "LEVEL COMPLETE";
-  const text2 = "DOG ETH BTC";
+  const text2 = "DOGE EATS BTC";
   ctx.font = "bold 48px Arial";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
@@ -360,7 +360,7 @@ function drawIntroScreen() {
   ctx.drawImage(introBackgroundImage, 0, 0, canvas.width, canvas.height);
 
   // Draw title text
-  const titleText = "DOG ETH BTC";
+  const titleText = "DOGE EATS BTC";
   ctx.font = "bold 48px 'Press Start 2P', Arial";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
